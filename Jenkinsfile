@@ -7,7 +7,7 @@ pipeline {
       }
     }
     
-    stage('---test---')
+    stage('---test---') {
     steps {
       bat "mvn test"
     }
