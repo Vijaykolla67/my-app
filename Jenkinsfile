@@ -6,16 +6,16 @@ pipeline {
         bat "mvn clean"
       }
     }
-
+    
     stage('---test---')
     steps {
       bat "mvn test"
     }
   }
-
+  
   stage('---package---') {
     steps {
-      sh "mvn package"
+      bat "mvn package"
      }
    }
  }
